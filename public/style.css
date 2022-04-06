@@ -1,0 +1,33 @@
+.sudoku-grid {
+    display: grid;
+    grid-template: auto auto / repeat(9, 0fr);
+}
+.num-grid {
+    display: grid;
+    grid-template: auto auto / repeat(10, 0fr);
+}
+
+.singleTile,.singleTileThickC,.singleTileThickR, .singleTileThickCR, .num{
+    display: table-cell;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.notes{
+position:absolute;
+bottom: 10px;
+}
+.singleTileThickC {
+    border-right: thick solid black;
+    }
+.singleTileThickR {
+    border-bottom: thick solid black;
+    }
+.singleTileThickCR {
+    border-right: thick solid black;
+    border-bottom: thick solid black;
+    }
