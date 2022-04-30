@@ -1,12 +1,9 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 export default function Number(props){
-    const styles = {
-        backgroundColor: props.isSelected ? "#59E391" : "white"
-    }
     return(
-        <div style={styles} onClick = {(props.count < 9) ? props.selectNumber : undefined} >
-            <h2 className= "num">{props.value}</h2>
-        </div>
+        <Fragment>
+            <button className = 'buttonNumber' disabled = {props.number != 0 && props.count >= 9} onClick ={props.selectNumber}> {props.number}</button>
+        </Fragment>
     )
 }

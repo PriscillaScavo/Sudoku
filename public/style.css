@@ -31,3 +31,14 @@ bottom: 10px;
     border-right: thick solid black;
     border-bottom: thick solid black;
     }
+
+.buttonNumber:focus, .singleTile:hover,.singleTileThickC:hover,.singleTileThickR:hover, .singleTileThickCR:hover,
+.singleTile:focus,.singleTileThickC:focus,.singleTileThickR:focus, .singleTileThickCR:focus {
+    background-color:yellow;
+}
+
+input#tile {
+    background: transparent;
+    border: none;
+    text-align: center;
+}
